@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="600.0">
+         <left>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="300.0" style="-fx-background-color: #ADD8E6;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Clients" />
+                  <TextField fx:id="clientsTF" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Queues" />
+                  <TextField fx:id="queuesTF" maxWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Simulation Time" />
+                  <TextField fx:id="simTimeTF" maxWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Min Arrival Time" />
+                  <TextField fx:id="minAT" maxWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Max Arrival Time" />
+                  <TextField fx:id="maxAT" maxWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Min Service Time" />
+                  <TextField fx:id="minST" maxWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Max Service Time" />
+                  <TextField fx:id="maxST" maxWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#onStartButtonClick" text="Start Simulation">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <right>
+            <TextArea fx:id="textArea" prefHeight="516.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="600.0" style="-fx-background-color: #4169E1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="502.0" text="Queue Management System" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
